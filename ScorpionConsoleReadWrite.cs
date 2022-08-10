@@ -2,7 +2,7 @@ using System;
 
 namespace ScorpionConsoleReadWrite
 {
-    internal static class Colors
+    internal /*static*/ struct Colors
     {
         //Defaults to colors:
         internal static ConsoleColor default_color = ConsoleColor.White,
@@ -30,16 +30,61 @@ namespace ScorpionConsoleReadWrite
             Colors.experimental_color = experimental_color;
             return;
         }
+        
+        //Write parameterized elements to console. Usually redirected here from one of the below public functions
+        private static string writeParams(params string[] to_out)
+        {
+            string final = default;
+            foreach(string s in to_out)
+                final += s;
+            return final;
+        }
+
+        public static void writeOutput(params string[] to_out)
+        {
+            consoleColor(Colors.output_color);
+            Console.WriteLine(writeParams(to_out));
+            defaultColor();
+            return;
+        }
+
+        public static void writeSpecial(params string[] to_out)
+        {
+            consoleColor(Colors.special_color);
+            Console.WriteLine(writeParams(to_out));
+            defaultColor();
+            return;
+        }
+
+        public static void writeSuccess(params string[] to_out)
+        {
+            consoleColor(Colors.success_color);
+            Console.WriteLine(writeParams(to_out));
+            defaultColor();
+            return;
+        }
+
+        public static void writeError(params string[] to_out)
+        {
+            consoleColor(Colors.error_color);
+            Console.WriteLine(writeParams(to_out));
+            defaultColor();
+            return;
+        }
+        
+        public static void writeWarning(params string[] to_out)
+        {
+            consoleColor(Colors.warning_color);
+            Console.WriteLine(writeParams(to_out));
+            defaultColor();
+            return;
+        }
 
         //WRITE STRING
         public static void writeOutput(object to_out)
         {
             consoleColor(Colors.output_color);
-            if (to_out.GetType() == Type.GetType("byte[]"))
-                foreach (byte b_ in (byte[])to_out)
-                    Console.WriteLine("{0:X}", b_);
-            else
-                Console.WriteLine(to_out + "\n");
+            Console.WriteLine(to_out + "\n");
             defaultColor();
             return;
         }
@@ -79,28 +124,32 @@ namespace ScorpionConsoleReadWrite
         public static void writeDebug(object to_out)
         {
             consoleColor(Colors.debug_color);
-            if (to_out.GetType() == Type.GetType("byte[]"))
+            if (to_out.GetType().Name == Type.GetType("byte[]").Name)
                 foreach (byte b_ in (byte[])to_out)
                     Console.WriteLine("{0:X}", b_);
             else
-                Console.WriteLine("[DEBUG]:\n" + to_out + "\n");
+                Console.WriteLine("[DEBUG]: {0}", to_out);
             defaultColor();
             return;
         }
 
-        public static void writeVariadic()
+        public static void writeVariadic(params string[] to_out)
         {
-            
+            string str_output = "";
+            for(int i = 0; i < to_out.Length; i++)
+                str_output += to_out;
+            writeOutput(str_output);
+            return;
         }
 
         public static void writeExperimental(object to_out)
         {
             consoleColor(Colors.experimental_color);
-            if (to_out.GetType() == Type.GetType("byte[]"))
+            if (to_out.GetType().Name == Type.GetType("byte[]").Name)
                 foreach (byte b_ in (byte[])to_out)
                     Console.WriteLine("{0:X}", b_);
             else
-                Console.WriteLine("[EXPERIMENTAL]:\n" + to_out + "\n");
+                Console.WriteLine("[EXPERIMENTAL]: {0}", to_out);
             defaultColor();
             return;
         }
@@ -114,6 +163,7 @@ namespace ScorpionConsoleReadWrite
         internal static void defaultColor()
         {
             Console.ForegroundColor = Colors.default_color;
+            return;
         }
     }
 }
