@@ -10,3 +10,15 @@
 /home/ferret/GIT/Scorpion-Console-Read-Write/obj/Debug/net6.0/consolereadwrite.dll
 /home/ferret/GIT/Scorpion-Console-Read-Write/obj/Debug/net6.0/ref/consolereadwrite.dll
 /home/ferret/GIT/Scorpion-Console-Read-Write/obj/Debug/net6.0/consolereadwrite.pdb
+/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/bin/Debug/net6.0/consolereadwrite.deps.json
+/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/bin/Debug/net6.0/consolereadwrite.dll
+/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/bin/Debug/net6.0/ref/consolereadwrite.dll
+/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/bin/Debug/net6.0/consolereadwrite.pdb
+/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/obj/Debug/net6.0/consolereadwrite.csproj.AssemblyReference.cache
+/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/obj/Debug/net6.0/consolereadwrite.GeneratedMSBuildEditorConfig.editorconfig
+/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/obj/Debug/net6.0/consolereadwrite.AssemblyInfoInputs.cache
+/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/obj/Debug/net6.0/consolereadwrite.AssemblyInfo.cs
+/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/obj/Debug/net6.0/consolereadwrite.csproj.CoreCompileInputs.cache
+/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/obj/Debug/net6.0/consolereadwrite.dll
+/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/obj/Debug/net6.0/ref/consolereadwrite.dll
+/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/obj/Debug/net6.0/consolereadwrite.pdb

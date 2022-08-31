@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/ferret/GIT/Scorpion-Console-Read-Write/consolereadwrite.csproj": {}
+    "/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/consolereadwrite.csproj": {}
   },
   "projects": {
-    "/home/ferret/GIT/Scorpion-Console-Read-Write/consolereadwrite.csproj": {
+    "/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/consolereadwrite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ferret/GIT/Scorpion-Console-Read-Write/consolereadwrite.csproj",
+        "projectUniqueName": "/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/consolereadwrite.csproj",
         "projectName": "consolereadwrite",
-        "projectPath": "/home/ferret/GIT/Scorpion-Console-Read-Write/consolereadwrite.csproj",
+        "projectPath": "/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/consolereadwrite.csproj",
         "packagesPath": "/home/ferret/.nuget/packages/",
-        "outputPath": "/home/ferret/GIT/Scorpion-Console-Read-Write/obj/",
+        "outputPath": "/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ferret/.nuget/NuGet/NuGet.Config"

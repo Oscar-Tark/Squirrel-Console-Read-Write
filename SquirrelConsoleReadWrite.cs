@@ -79,6 +79,14 @@ namespace ScorpionConsoleReadWrite
             defaultColor();
             return;
         }
+        
+        public static void writeDebug(params string[] to_out)
+        {
+            consoleColor(Colors.debug_color);
+            Console.WriteLine(writeParams(to_out));
+            defaultColor();
+            return;
+        }
 
         //WRITE STRING
         public static void writeOutput(object to_out)
@@ -154,16 +162,16 @@ namespace ScorpionConsoleReadWrite
             return;
         }
 
-        internal static void consoleColor(ConsoleColor color_)
-        {
-            Console.ForegroundColor = color_;
-            return;
-        }
+        internal static void consoleColor(ConsoleColor color_) => Console.ForegroundColor = color_;
+        internal static void defaultColor() => Console.ForegroundColor = Colors.default_color;
+    }
 
-        internal static void defaultColor()
+    public static class ConsoleRead
+    {
+        public static string ReadInput()
         {
-            Console.ForegroundColor = Colors.default_color;
-            return;
+            ConsoleWrite.writeSpecial("An external program is awaiting input, press CRTL+A to detatch from Squirrel for input");
+            return Console.ReadLine();
         }
     }
 }
