@@ -19,6 +19,6 @@
 /home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/obj/Debug/net6.0/consolereadwrite.AssemblyInfo.cs
 /home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/obj/Debug/net6.0/consolereadwrite.csproj.CoreCompileInputs.cache
 /home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/obj/Debug/net6.0/consolereadwrite.dll
-/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/obj/Debug/net6.0/ref/consolereadwrite.dll
-/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/obj/Debug/net6.0/consolereadwrite.pdb
 /home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/obj/Debug/net6.0/refint/consolereadwrite.dll
+/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/obj/Debug/net6.0/consolereadwrite.pdb
+/home/ferret/GIT/Squirrel_Project/Squirrel-Console-Read-Write/obj/Debug/net6.0/ref/consolereadwrite.dll

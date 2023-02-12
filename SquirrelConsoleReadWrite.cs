@@ -2,7 +2,7 @@ using System;
 
 namespace ScorpionConsoleReadWrite
 {
-    internal /*static*/ struct Colors
+    internal struct Colors
     {
         //Defaults to colors:
         internal static ConsoleColor default_color = ConsoleColor.White,
